@@ -15,16 +15,12 @@ Pod::Spec.new do |s|
   s.requires_arc   = true
   s.platform       = :ios, '9.0'
 
-  s.subspec "RCT" do |ss|
-    ss.source_files = "ios/RCT/**/*.{h,m}"
+  s.subspec "QrCode" do |ss|
+    ss.source_files = "ios/QrCode/**/*.{h,m}"
   end
 
-  s.subspec "RN" do |ss|
-    ss.source_files = "ios/RN/**/*.{h,m}"
-  end
-
-
-  s.default_subspecs = "RN", "RCT"
+ 
+  s.default_subspecs = "QrCode"
 
   s.preserve_paths = 'LICENSE', 'README.md', 'package.json', 'index.js'
 
